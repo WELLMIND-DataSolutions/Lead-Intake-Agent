@@ -6,17 +6,19 @@ An autonomous AI agent that captures, qualifies, and responds to law firm leads 
 
 </div>
 
+---
+
 ## Overview
 
 The Legal Lead Intake Agent is a true tool-calling AI agent built for personal injury and family law firms. When a new lead arrives — from a website form, a tracked phone call, or a Google Local Services Ad — the agent reads the lead's message, decides how to classify it, and autonomously calls the tools it needs (CRM logging, team notification, and prospect auto-reply) in whatever order the situation requires.
 
 Unlike a traditional automation script, no part of this system follows a fixed, hardcoded sequence. The language model is given a set of tools and decides — on every single lead — which ones to call, in what order, and with what data.
 
-## Problem & Our Solution
+---
 
-**The problem:** Law firms lose high-value leads every day simply because of response speed. Prospects contacting multiple firms at once typically sign with whichever firm replies first. Manual intake also means inconsistent CRM data, missed high-urgency cases, and intake staff finding out about a new lead minutes or hours after it arrived.
+## Aim
 
-**Our solution:** An always-on agent that:
+To give law firms an always-on agent that:
 
 - Reads and understands a lead's message the moment it arrives
 - Classifies the practice area and extracts key case facts automatically
@@ -24,7 +26,15 @@ Unlike a traditional automation script, no part of this system follows a fixed, 
 - Alerts the intake team instantly for urgent cases
 - Sends a reassuring first reply to the prospect within seconds, before they contact a competing firm
 
-## Key Features & What Makes This Different
+---
+
+## Problem Statement
+
+Law firms lose high-value leads every day simply because of response speed. Prospects contacting multiple firms at once typically sign with whichever firm replies first. Manual intake also means inconsistent CRM data, missed high-urgency cases, and intake staff finding out about a new lead minutes or hours after it arrived.
+
+---
+
+## Key Features
 
 | Feature | Description |
 |---|---|
@@ -36,11 +46,26 @@ Unlike a traditional automation script, no part of this system follows a fixed, 
 | Live operations dashboard | A real-time command center shows every lead, its classification, and the status of every downstream action |
 | Fault-tolerant by design | A failure in one tool (e.g. CRM downtime) never blocks the others — each action is logged and reported independently |
 
+---
+
 ## System Architecture
 
 <p align="center">
   <img src="docs/architecture.svg" alt="System architecture diagram of the Legal Lead Intake Agent" width="100%">
 </p>
+
+---
+
+## Benefits
+
+- **Faster response, more signed cases** — prospects get a first reply within seconds, before they reach a competing firm
+- **No missed urgent cases** — high-priority leads are flagged and pushed to the intake team immediately
+- **Clean, consistent CRM data** — every lead is logged in the same structured format, with marketing attribution attached
+- **Clear marketing insight** — UTM and GCLID tracking show which campaigns actually bring in cases
+- **Compliance built in** — prospect messages always use the approved template wording
+- **Reliable under failure** — if one system is down, the other actions still run and every result is visible on the dashboard
+
+---
 
 ## Conclusion
 
